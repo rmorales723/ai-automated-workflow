@@ -1,0 +1,114 @@
+package com.robert;
+
+public class HandsOn
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+
+	}
+	
+	public interface Mammal extends Animal
+	{
+		public String speak(); 
+		public String run();
+		public String eat();
+		public String crawl();
+	}
+
+	
+	public class Dog implements Mammal
+	{
+		public String crawl();
+		
+		public String speak()
+	    {
+	      return  "Bark!";
+	    }
+	    
+	    public String run()
+	    {
+	        return "Dogs can run at a top speed of 45 mph!";
+	    }
+	    public String eat()
+	    {
+	        return "Dogs eat bones.";
+	    }
+	    
+	}
+	
+	public class Cat implements Mammal
+	{
+		public String speak()
+	    {
+	        return "Meow!";
+	    }
+	    
+	    public String run()
+	    {
+	        return "Cats can run at a top speed of 30 mph!";
+	    }
+	    public String eat()
+	    {
+	        return "Cats eat mice.";
+	    }
+	}
+	
+	public class Cow implements Mammal
+	{
+		public String speak()
+	    {
+	        return "Moo!";
+	    }
+	    
+	    public String run()
+	    {
+	        return "Cows can run at a top speed of 25 mph!";
+	    }
+	    
+	    public String eat()
+	    {
+	        return "Cows eat grass.";
+	    }
+	}
+	
+	public interface Animal extends Reptile
+	{
+		public String eat();
+	}
+
+	public interface Reptile 
+	{
+		public String crawl();
+		
+	}
+	
+	public class Turtle implements Reptile
+	{
+		public String eat() 
+		{
+			return "Turtles eat lettuce.";
+		}
+		
+		public String crawl()
+		{
+			return eat();
+		}
+		
+	}
+	
+	
+	public class Lizard implements Reptile
+	{
+		public String eat() 
+		{
+			return "Lizards eat crickets.";
+		}
+		
+		public String crawl() 
+		{
+			return " ";
+		}
+	}
+}

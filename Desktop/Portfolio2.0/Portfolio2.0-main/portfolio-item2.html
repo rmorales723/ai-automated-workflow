@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rob`s Portfolio Website</title>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+        
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/profile4.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                <!--The title--> <strong>Appointments</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">trainer & client appointment scheduler</p>
+            <img src="img/services.jpg" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>This project creates appointments for clients who have personal training. Implementing 
+               RESTful routes, and full CRUD capabilities.</p>
+            <img src="img/signup.png" alt="">
+            <p>We have a Signup react component that posts the user typed data for the user 
+               being created (signed up) from the frontend to the Rails backend API. When 
+               the user hits the Sign Up button after typing the user information, it makes 
+               a POST /signup API call to the backend Rails API with the user information 
+               in the request body and the user record is created and saved in the backend database.</p>
+            
+            <img src="img/appointmentslogin.png" alt="">
+            <p>We have a Login react component that posts the user typed data for the user being 
+               logged in from the frontend to the Rails backend API. When the user hits the Login 
+               button after typing the user information, it makes a POST /login API call to the 
+               backend Rails API with the user information in the request body and the user is 
+               authenticated using their username and password. If the user types the username/password 
+               wrong, then the API returns an unauthorized response.</p>
+            
+            <img src="img/clients.png" alt="">
+            <p>We have a Clients react component that makes a fetch API call (GET /clients) to the 
+               Rails backend API to fetch all the clients data that are present in the database, and 
+               then displays each client in the UI. We have a Client react component to render each 
+               client data in the UI. We have EDIT and DELETE buttons that give the signed in user 
+               the ability to edit a client information and delete the client. When the user clicks 
+               on the DELETE button, it makes a DELETE request to the Rails backend API and deletes 
+               the client record from the database.</p>
+            
+            <img src="img/addclient.png" alt="">
+            <p>We have a NewClient react component that posts the user typed data for the client being 
+               created from the frontend to the Rails backend API.</p>
+            
+            <img src="img/editclient.png" alt="">
+            <p>We have EditClient react component that fetches the current data for the client being 
+               edited from the backend Rails API. And, then it lets the logged in user edit the client 
+               information (e.g. name, number, email, img_url etc.). When the user hits the Submit button, 
+               it makes a fetch (PATCH clients/:id) API call to the backend Rails API with the edited 
+               client information in the request body and the client data is updated in the backend database accordingly.</p>
+
+            <img src="img/appointmentscalender.png" alt="">
+            <p>We have a AppointmentsContainer react component that makes a fetch API (GET /appointment) 
+               call to the Rails backend API to fetch all the appointments data that are present in the 
+               database, and then displays each appointment in the UI. We have an Appointment react component 
+               to render each appointment data in the UI.</p>
+           
+            <img src="img/addappointment.png" alt="">
+            <p>We have an AppointmentForm react component that posts the current data for the appointment being 
+                added from the frontend to the Rails backend API. It lets the logged in user add the appointment 
+                information (e.g. client name, date, and time).
+
+                We have ClientsDropdown react component that is used inside the AppointmentForm react component 
+                to display all the available clients from the Rails backend API.
+                
+                And, we are using Calendar component from the react-calendar library to display the calendar and 
+                let the user select a date for the appointment from the calendar.
+                
+                We have TimeSelectDropdown react component that is used inside the AppointmentForm react component 
+                to display all the available time options and selecting the time for the appointment.
+                
+                When the user hits the Submit button after choosing the appointment information, it makes a 
+                POST /appointments API call to the backend Rails API with the appointment information in the request 
+                body and the appointment record is created and saved in the backend database.</p>
+            <br>
+            <img src="img/editappointment.png" alt="">
+            <p>We have EditAppointment react component that fetches the current data for the appointment being edited
+               from the backend Rails API. And, then it lets the logged in user edit the appointment information 
+               (e.g. client name, date, and time). When the user hits the Submit button, it makes a fetch (PATCH /appointments/:id)
+               API call to the backend Rails API with the edited appointment information in the request body and the 
+               appointment data is updated in the backend database accordingly. We re-used all the 3 components here inside 
+               the EditAppointment react component (ClientsDropdown, Calendar and TimeSelectDropdown) that were used and 
+               described in the AppointmentForm react component section above.</p>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- email address -->
+            <a href="robmorales723@gmail.com" class="footer__link">robmorales723@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/rmorales723?tab=repositories">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/robert-morales-7a56944b/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+         
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

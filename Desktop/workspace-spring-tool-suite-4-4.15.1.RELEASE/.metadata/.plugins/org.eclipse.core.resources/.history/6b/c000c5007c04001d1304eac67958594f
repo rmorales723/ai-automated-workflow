@@ -1,0 +1,8 @@
+package com.robert;
+
+import com.robert.HandsOn.Reptile;
+
+public interface Animal extends Reptile
+{
+	public String eat();
+}

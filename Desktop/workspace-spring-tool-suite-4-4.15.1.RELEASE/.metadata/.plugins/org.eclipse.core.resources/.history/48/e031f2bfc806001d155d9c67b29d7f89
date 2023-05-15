@@ -1,0 +1,47 @@
+package com.robertmorales;
+
+public class Ticket
+{
+
+	
+//	public String movieName;
+//	public String movieDate;
+//	public String movieSeat;
+//	
+	
+	public void printTicket(boolean isStudent, int age)
+	{
+		int cost = 0;
+		// if (condition) ;    // if this is true, do nothing, otherwise do nothing, you might as well not have the if statement
+		// if (condition) {true stuff;}  // if this is true, do the true stuff, otherwise do nothing
+		// if (condition) {true stuff;} else ;  // if this is true, do the true stuff, otherwise do nothing, you might as well not have the else clause
+		// if (condition) {true stuff;} else {false stuff;} // if this is true, do the ture stuff, otherwise do the false stuff
+		
+		// if (condition) ;  {what I thought was the true stuff} // is actually alwasy executed because it is not inside the if statement cause you ended the if statement early by mistake; }
+		if(age>=65)
+		{
+			System.out.println("cost = $7");
+			//return;
+		}
+		// if student, pay $8
+		if(isStudent)
+		{
+			System.out.println("cost = $0");
+			//return;
+		}
+		// if child, pay $8
+		if(age<=12)
+		{
+			System.out.println("cost = $8");
+			//return;
+		}
+		//invalid age
+		
+		// everyone else, pay $10
+		else
+		{
+			System.out.println("cost = $10");
+			//return;
+		}
+	}
+}

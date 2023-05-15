@@ -1,0 +1,19 @@
+package com.robert;
+
+public class HandsOn
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		Employee e = new Employee("Rob", "Morales", "Krank", 6);
+        Manager m = new Manager("Sarah", "Baldwin", "Krank", 5, "CEO");
+        Engineer en = new Engineer("Travis", "Morales", "Krank", 3, "Lead");
+
+    System.out.println(e.toString());
+    System.out.println(m.toString());
+    System.out.println(en.toString());
+
+	}
+
+}

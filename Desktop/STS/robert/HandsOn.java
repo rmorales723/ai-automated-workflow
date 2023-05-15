@@ -1,0 +1,35 @@
+package com.robert;
+
+public class HandsOn
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		Cat c = new Cat();
+		System.out.println(c.eat());
+		System.out.println(c.speak());
+		System.out.println(c.run());
+		
+		Dog d = new Dog();
+		System.out.println(d.eat());
+		System.out.println(d.speak());
+		System.out.println(d.run());
+		
+		Cow cc = new Cow();
+		System.out.println(cc.eat());
+		System.out.println(cc.speak());
+		System.out.println(cc.run());
+		
+		Turtle t = new Turtle();
+		System.out.println(t.eat());
+		System.out.println(t.crawl());
+		
+		Lizard l = new Lizard();
+		System.out.println(l.eat());
+		System.out.println(l.crawl());
+		
+	}
+	
+	
+}

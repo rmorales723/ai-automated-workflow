@@ -1,0 +1,28 @@
+package com.robertmorales;
+
+public class HandsOn
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		
+		
+		Ticket t = new Ticket();
+		System.out.println(t.printTicket(false, 65));
+		t.printTicket(false, 60);
+		t.printTicket(false, 20);
+		t.printTicket(false, 6);
+		
+		t.printTicket(true, 65);
+		t.printTicket(true, 60);
+		t.printTicket(true, 20);
+		t.printTicket(true, 6);
+		
+		
+		
+	}
+
+			
+			
+}		

@@ -1,0 +1,56 @@
+package com.robertmorales;
+
+public class HandsOn
+{
+
+	public static void main(String[] args)
+	{
+	
+		int val = 2, count = 3;
+		System.out.println("Value: " + val);
+		
+		int d = doubleMe(val);
+		System.out.println("Doubled: " + d);
+		System.out.println("Value: " + val);
+		
+		int q = quadrupleMe(val);
+		System.out.println("Quadrupled: " + q);
+		System.out.println("Value: " + val);
+		System.out.println("Times: " + count);
+		
+		int dt = doubleMeTimes(val, count);
+		System.out.println("Result: " + dt);
+	}
+	
+	static int doubleMe(int val) 
+	{
+		//doubling the value
+			return val*2;
+	}
+	
+	static int quadrupleMe(int val) 
+	
+	{	
+		//calling doubleMe() to double the value	
+			int q = doubleMe(val);
+		//again doubling the value returned by doubleMe() and returning it
+			return q*2;
+	}
+	
+	static int quadrupleMe1(int val) 
+	{	
+		//calling doubleMe() to double the value	
+			int q = doubleMe(val);
+		//again doubling the value returned by doubleMe() and returning it
+			return q*2;
+	}
+	
+	static int doubleMeTimes(int val, int count) {
+		//calling doubleMe() count times to double the value count times
+			for(int i=1; i<=count; i++) {
+				val = doubleMe(val);
+			}
+		//returning the result
+			return val;
+	}
+}

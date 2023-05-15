@@ -1,0 +1,31 @@
+package com.robertmorales;
+
+public class HandsOn
+{
+
+	public static void main(String[] args)
+	{
+	
+		int val = 2, count = 3;
+		System.out.println("Value: " + val);
+		
+		int d = doubleMe(val);
+		System.out.println("Doubled: " + d);
+		System.out.println("Value: " + val);
+	}
+	
+	static int doubleMe(int val) 
+	{
+		//doubling the value
+			return val*2;
+	}
+	
+	static int quadrupleMe(int val) 
+	
+	{	
+		//calling doubleMe() to double the value	
+			int q = doubleMe(val);
+		//again doubling the value returned by doubleMe() and returning it
+			return q*2;
+	}
+}

@@ -1,0 +1,10 @@
+package com.robert;
+
+public class Manager extends Employee {
+    String jobTitle;
+
+    public Manager() {
+        super();
+        this.jobTitle = "";
+    }
+}

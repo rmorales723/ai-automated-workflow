@@ -1,0 +1,18 @@
+package com.robertmorales;
+
+public class HandsOn
+{
+
+	public static void main(String[] args)
+	{
+	
+		int val = 2, count = 3;
+		System.out.println("Value: " + val);
+	}
+	
+	static int doubleMe(int val) 
+	{
+		//doubling the value
+			return val*2;
+	}
+}

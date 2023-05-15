@@ -1,0 +1,21 @@
+package com.robertmorales;
+
+public class HandsOn
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		int num1=15, num2=25;
+        int val;
+        val = num1*num2;
+
+	}
+		public int doubleMe(int val, double[] arr)
+		
+	{
+		
+		  return  val;
+		
+	}
+}

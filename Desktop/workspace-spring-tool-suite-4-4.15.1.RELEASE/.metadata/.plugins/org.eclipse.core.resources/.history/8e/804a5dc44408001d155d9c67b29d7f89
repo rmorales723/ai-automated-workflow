@@ -1,0 +1,14 @@
+package com.robertmorales;
+
+public class objects
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		Lion mLion = new Lion(5, 300, Sex.MALE);
+		boolean isEqual = mLion.equals(mLion);
+		System.out.println(isEqual);
+	}
+
+}

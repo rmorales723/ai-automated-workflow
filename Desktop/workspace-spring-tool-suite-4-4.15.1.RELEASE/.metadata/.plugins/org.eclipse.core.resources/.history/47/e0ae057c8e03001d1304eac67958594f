@@ -1,0 +1,32 @@
+package com.rob;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		black black1;
+		black black2;
+		black black3;
+		int i1;
+		int i2;
+		black1 = new black();
+		black2 = black1;
+		black3 = new black();
+		String s = black1.toString();
+		System.out.println(black1);
+		System.out.println(black2);
+		System.out.println(black3);
+		System.out.println(s);
+	}
+
+}
+
+class black {
+	public int b1;
+	public int b2;
+	public int b3;
+	
+	public void blackmethod1() {}
+	public void blackmethod2() {}
+}

@@ -1,0 +1,65 @@
+package com.rob;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		black black1;
+		black black2;
+		black black3;
+		orange orange1;
+		green green1;
+		green1 = new green();
+		int i1;
+		int i2;
+		black1 = new black();
+		black2 = black1;
+		black3 = new black();
+		String s = black1.toString();
+		System.out.println(black1);
+		System.out.println(black2);
+		System.out.println(black3);
+		System.out.println(s);
+		orange1 = new orange();
+		System.out.println(orange1);
+		
+		Object o;
+		o = green;
+		
+		System.out.println(o);
+	}
+
+}
+
+class black {
+	public int b1;
+	public int b2;
+	public int b3;
+	
+	public void blackmethod1() {}
+	public void blackmethod2() {}
+	
+	public String toString() {
+		return super.toString() + "!b1=" + b1 + "b2=" + b2 + "b3=" + b3;
+	}
+}
+
+class orange extends black {
+	public int o1;
+	public int o2;
+	
+	public void orangemethod() {}
+	
+	public String toString() {
+		return super.toString() + "o1" + o1 + "o2" + o2;
+	}
+}
+
+class green extends orange {
+	public int g1;
+	public void greenmethod1() {}
+	public String toString() {
+		return super.toString() + "g1=" + g1;
+	}
+}

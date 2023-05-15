@@ -1,0 +1,37 @@
+package com.robertmorales;
+
+public class Ticket
+{
+
+	
+//	public String movieName;
+//	public String movieDate;
+//	public String movieSeat;
+//	
+	
+	public void printTicket(boolean isStudent, int age)
+	{
+		int cost = 0;
+		if(age>=65)
+		{
+			System.out.println("cost = $7");
+		}
+		// if student, pay $8
+		if(isStudent)
+		{
+			System.out.println("cost = $8");
+		}
+		// if child, pay $8
+		if(age>=12)
+		{
+			System.out.println("cost = $8");
+		}
+		//invalid age
+		
+		// everyone else, pay $10
+		else
+		{
+			System.out.println("cost = $10");
+		}
+	}
+}
