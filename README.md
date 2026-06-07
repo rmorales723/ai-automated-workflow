@@ -2,7 +2,7 @@ I created an automated subscription tracker that processes natural language inpu
 Built a personalized AI assistant on the n8n platform using OpenAI, and Google Sheets. Created a chat interface, setting up memory, and writing a system prompt to connect tools for automating tasks like subscription tracking.
 
 
-### <p align="center">Created the Trigger, Brain, Chat model, Memory, Brain stem, and Tool</p>
+### <p align="center">Implemented a Chat Trigger, Brain, Chat model, Memory, Brain stem, and Tool</p>
 <img width="1187" height="690" alt="aiAgent" src="https://github.com/user-attachments/assets/e3418f33-925e-435b-9a36-62a28e52e0b2" />
 
 ---
